@@ -29,7 +29,7 @@ class Word
     end
 
     def to_s
-        "#<#{self.class} value: #{self.value}>"
+        "#<#{self.class} @value: #{self.value}>"
     end
 end
 
