@@ -32,11 +32,3 @@ class Word
         "#<#{self.class} @value: #{self.value}>"
     end
 end
-
-w = Word.new "help"
-puts w
-puts w.count_letters
-w.value = "on it"
-puts w
-puts w.count_letters
-puts Word.count_letters("hello")
