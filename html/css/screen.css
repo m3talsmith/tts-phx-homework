@@ -1,31 +1,86 @@
-/* This is a css comment */
-
-/*
-    . means you are selecting on a class attribute
-    # means you are selecting on an id attribute
-*/
-
 body {
-    font-size: 10px;
+    padding: 30px;
+    background-image: url("../img/background.png");
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
 }
 
-button {
-    border: none;
-    border-radius: 7px;
+.profile {
+    width: 33%;
+    min-width: 480px;
+    border-radius: 27px;
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 12px 30px 20px rgba(3, 84, 119, 0.15);
 }
 
-.profile h1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    height: 1rem;
-    border: 1px solid grey;
-    background-color: white;
-    padding: 1em;
+.profile .details img {
+    margin: 20px;
 }
 
-.profile .details {
-    margin-top: 4rem;
+.profile .details .name {
+    margin: 10px;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.profile .details .shortname {
+    margin: 10px;
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.profile .followings {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 30px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.profile .followings .details {
+    display: inline-block;
+    width: 25%;
+}
+
+.profile .followings .details:first-child {
+    margin-right: -15px;
+}
+
+.profile .followings .details .count {
+    margin-top: 6px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.profile .actions button {
+    width: 275px;
+    height: 60px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: #29cce1;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width: 420px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .profile {
+        margin: 0;
+        min-width: 0;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0;
+        padding: 15px;
+        padding-bottom: 20px;
+    }
 }

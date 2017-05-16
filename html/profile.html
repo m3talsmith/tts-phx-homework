@@ -1,35 +1,32 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <title>User Profile</title>
-        <link type="test/css" rel="stylesheet" href="css/reset.css" />
-        <link
-            type="text/css"
-            rel="stylesheet"
-            href="css/screen.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="css/screen.css" />
     </head>
     <body>
         <div class="profile">
-            <h1>User Profile</h1>
             <div class="details">
-                <h2>Details</h2>
+                <img src="img/profile.png" />
+                <div class="name">Caeser Wirichaga</div>
+                <div class="shortname">@cwirichaga</div>
+            </div>
+            <div class="followings">
                 <div class="details">
-                    <div>Screen Name</div>
-                    <img src="images/profile.jpg" />
-                    <div>Actual Name</div>
-                    <div>Number of Followers</div>
+                    <div class="title">Followers:</div>
+                    <div class="count">123</div>
+                </div>
+                <div class="details">
+                    <div class="title">Following:</div>
+                    <div class="count">456</div>
                 </div>
             </div>
-            <div class="privacy">
-                <h2>Privacy</h2>
-                <div>
-                    <div>Publically Visible</div>
-                    <div>Allow Followers</div>
-                </ul>
-            </div>
             <div class="actions">
-                <button class="primary">Save</button>
-                <button class="secondary">Cancel</button>
+                <button class="primary">Follow</button>
             </div>
         </div>
     </body>
